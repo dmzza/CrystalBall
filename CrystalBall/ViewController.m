@@ -19,6 +19,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
+    [self.view insertSubview:backgroundImageView atIndex:0];
 	self.predictions = [[NSArray alloc] initWithObjects:
                             @"Oh sure, I think so",
                             @"Well, quite yes.",
