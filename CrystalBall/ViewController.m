@@ -26,4 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed:(UIButton *)sender {
+   self.predictionLabel.text = @"Definitely YES";
+}
 @end
