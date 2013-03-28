@@ -13,11 +13,13 @@
 @end
 
 @implementation ViewController
+@synthesize predictionLabel;
+@synthesize predictions;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	predictions = [[NSArray alloc] initWithObjects:
+	self.predictions = [[NSArray alloc] initWithObjects:
                             @"Oh sure, I think so",
                             @"Well, quite yes.",
                             @"No, surely not; never",
@@ -39,6 +41,6 @@
 - (IBAction)buttonPressed:(UIButton *)sender {
     
     
-   self.predictionLabel.text = [predictions objectAtIndex:0];
+   self.predictionLabel.text = [self.predictions objectAtIndex:0];
 }
 @end
