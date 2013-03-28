@@ -12,12 +12,14 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crystal Ball" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssR-th-KZr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="lCD-Vw-CDm"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ask me anything" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" preferredMaxLayoutWidth="229" translatesAutoresizingMaskIntoConstraints="NO" id="ssR-th-KZr">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="JJS-at-c45"/>
+                                    <constraint firstAttribute="height" constant="109" id="R6O-nm-9Mr"/>
+                                    <constraint firstAttribute="width" constant="229" id="U5k-0Z-Obq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zs-1g-7mN">
@@ -36,12 +38,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Zs-1g-7mN" firstAttribute="top" secondItem="3" secondAttribute="top" constant="200" id="2Po-jU-63q"/>
-                            <constraint firstItem="ssR-th-KZr" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="9PW-3F-doM"/>
-                            <constraint firstAttribute="trailing" secondItem="3Zs-1g-7mN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="dLx-V8-TmJ"/>
-                            <constraint firstItem="3Zs-1g-7mN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="reR-ZB-7hC"/>
-                            <constraint firstItem="ssR-th-KZr" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="s4E-jM-9bx"/>
-                            <constraint firstAttribute="trailing" secondItem="ssR-th-KZr" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="wFd-L9-nvH"/>
+                            <constraint firstAttribute="bottom" secondItem="3Zs-1g-7mN" secondAttribute="bottom" constant="13" id="6ea-77-zG7"/>
+                            <constraint firstItem="lCD-Vw-CDm" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="BtV-Ob-oAr"/>
+                            <constraint firstAttribute="trailing" secondItem="3Zs-1g-7mN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="TOE-y8-lNd"/>
+                            <constraint firstItem="3Zs-1g-7mN" firstAttribute="centerX" secondItem="ssR-th-KZr" secondAttribute="centerX" type="default" id="VCM-dh-5gA"/>
+                            <constraint firstItem="lCD-Vw-CDm" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="VHq-uM-vc5"/>
+                            <constraint firstItem="ssR-th-KZr" firstAttribute="top" secondItem="3" secondAttribute="top" constant="211" id="cYs-ZX-zL2"/>
+                            <constraint firstItem="3Zs-1g-7mN" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="jHh-ZZ-szn"/>
+                            <constraint firstItem="lCD-Vw-CDm" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="sq2-Bi-Ycy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -52,6 +56,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.png" width="320" height="480"/>
+    </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

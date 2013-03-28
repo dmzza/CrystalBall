@@ -23,6 +23,8 @@
 		630AB9CA1704B9B2002A8B2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630AB9A51704B9B1002A8B2C /* Foundation.framework */; };
 		630AB9D21704B9B2002A8B2C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 630AB9D01704B9B2002A8B2C /* InfoPlist.strings */; };
 		630AB9D51704B9B2002A8B2C /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 630AB9D41704B9B2002A8B2C /* CrystalBallTests.m */; };
+		6336F10D1704D9F900E67CA9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6336F10B1704D9F900E67CA9 /* background.png */; };
+		6336F10E1704D9F900E67CA9 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6336F10C1704D9F900E67CA9 /* background@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		630AB9D11704B9B2002A8B2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		630AB9D31704B9B2002A8B2C /* CrystalBallTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrystalBallTests.h; sourceTree = "<group>"; };
 		630AB9D41704B9B2002A8B2C /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		6336F10B1704D9F900E67CA9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		6336F10C1704D9F900E67CA9 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		630AB9A91704B9B1002A8B2C /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
+				6336F10A1704D9BF00E67CA9 /* Images */,
 				630AB9B21704B9B1002A8B2C /* AppDelegate.h */,
 				630AB9B31704B9B1002A8B2C /* AppDelegate.m */,
 				630AB9BB1704B9B1002A8B2C /* MainStoryboard.storyboard */,
@@ -158,6 +163,15 @@
 				630AB9D01704B9B2002A8B2C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6336F10A1704D9BF00E67CA9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6336F10B1704D9F900E67CA9 /* background.png */,
+				6336F10C1704D9F900E67CA9 /* background@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,8 @@
 				630AB9B81704B9B1002A8B2C /* Default@2x.png in Resources */,
 				630AB9BA1704B9B1002A8B2C /* Default-568h@2x.png in Resources */,
 				630AB9BD1704B9B1002A8B2C /* MainStoryboard.storyboard in Resources */,
+				6336F10D1704D9F900E67CA9 /* background.png in Resources */,
+				6336F10E1704D9F900E67CA9 /* background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +469,7 @@
 				630AB9DA1704B9B2002A8B2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		630AB9DB1704B9B2002A8B2C /* Build configuration list for PBXNativeTarget "CrystalBallTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +478,7 @@
 				630AB9DD1704B9B2002A8B2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
