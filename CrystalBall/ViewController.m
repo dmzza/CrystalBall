@@ -27,6 +27,18 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-   self.predictionLabel.text = @"Definitely YES";
+    NSArray *predictions = [[NSArray alloc] initWithObjects:
+                            @"Oh sure, I think so",
+                            @"Well, quite yes.",
+                            @"No, surely not; never",
+                            @"In due time",
+                            @"Shake and spin again",
+                            @"Not in this lifetime",
+                            @"Only for the second time",
+                            @"I'm afraid so, yes",
+                            @"We should avoid this topic",
+                            nil];
+    
+   self.predictionLabel.text = [predictions objectAtIndex:0];
 }
 @end

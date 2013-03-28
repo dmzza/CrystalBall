@@ -16,7 +16,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JJS-at-c45"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
