@@ -39,8 +39,7 @@
 }
 
 - (IBAction)buttonPressed:(UIButton *)sender {
-    
-    
-   self.predictionLabel.text = [self.predictions objectAtIndex:0];
+    NSUInteger index = arc4random_uniform(self.predictions.count);
+    self.predictionLabel.text = [self.predictions objectAtIndex:index];
 }
 @end
