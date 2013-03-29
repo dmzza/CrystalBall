@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) NSArray *predictions;
+@property (strong, nonatomic) UIImageView *backgroundImageView;
 
 - (void) makePrediction;
 

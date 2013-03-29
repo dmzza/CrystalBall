@@ -15,12 +15,41 @@
 @implementation ViewController
 @synthesize predictionLabel;
 @synthesize predictions;
+@synthesize backgroundImageView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
-    [self.view insertSubview:backgroundImageView atIndex:0];
+    self.backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
+    [self.view insertSubview:self.backgroundImageView atIndex:0];
+    self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:
+                                                [UIImage imageNamed:@"cball00001"],
+                                                [UIImage imageNamed:@"cball00002"],
+                                                [UIImage imageNamed:@"cball00003"],
+                                                [UIImage imageNamed:@"cball00004"],
+                                                [UIImage imageNamed:@"cball00005"],
+                                                [UIImage imageNamed:@"cball00006"],
+                                                [UIImage imageNamed:@"cball00007"],
+                                                [UIImage imageNamed:@"cball00008"],
+                                                [UIImage imageNamed:@"cball00009"],
+                                                [UIImage imageNamed:@"cball000010"],
+                                                [UIImage imageNamed:@"cball000011"],
+                                                [UIImage imageNamed:@"cball000012"],
+                                                [UIImage imageNamed:@"cball000013"],
+                                                [UIImage imageNamed:@"cball000014"],
+                                                [UIImage imageNamed:@"cball000015"],
+                                                [UIImage imageNamed:@"cball000016"],
+                                                [UIImage imageNamed:@"cball000017"],
+                                                [UIImage imageNamed:@"cball000018"],
+                                                [UIImage imageNamed:@"cball000019"],
+                                                [UIImage imageNamed:@"cball000020"],
+                                                [UIImage imageNamed:@"cball000021"],
+                                                [UIImage imageNamed:@"cball000022"],
+                                                [UIImage imageNamed:@"cball000023"],
+                                                [UIImage imageNamed:@"cball000024"],
+                                                nil];
+    self.backgroundImageView.animationDuration = 1.0;
+    self.backgroundImageView.animationRepeatCount = 1;
 	self.predictions = [[NSArray alloc] initWithObjects:
                             @"Oh sure, I think so",
                             @"Well, quite yes.",
@@ -42,6 +71,8 @@
 
 - (void) makePrediction {
     NSUInteger index = arc4random_uniform(self.predictions.count);
+    
+    [self.backgroundImageView startAnimating];
     self.predictionLabel.text = [self.predictions objectAtIndex:index];
 }
 
