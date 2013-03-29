@@ -74,16 +74,33 @@
     
     [self.backgroundImageView startAnimating];
     self.predictionLabel.text = [self.predictions objectAtIndex:index];
+    
+    [UIView animateWithDuration:3.0 animations:^{
+        self.predictionLabel.alpha = 1.0;
+    }];
+}
+
+- (void) clearPrediction {
+    self.predictionLabel.text = @"";
+    self.predictionLabel.alpha = 0.0;
 }
 
 - (BOOL) canBecomeFirstResponder {
     return YES;
 }
 
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    [self clearPrediction];
+}
+
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if (motion == UIEventSubtypeMotionShake) {
         [self makePrediction];
     }
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self clearPrediction];
 }
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {

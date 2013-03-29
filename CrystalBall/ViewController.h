@@ -15,5 +15,6 @@
 @property (strong, nonatomic) UIImageView *backgroundImageView;
 
 - (void) makePrediction;
+- (void) clearPrediction;
 
 @end
