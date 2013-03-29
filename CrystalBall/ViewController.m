@@ -44,4 +44,15 @@
     NSUInteger index = arc4random_uniform(self.predictions.count);
     self.predictionLabel.text = [self.predictions objectAtIndex:index];
 }
+
+- (BOOL) canBecomeFirstResponder {
+    return YES;
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        NSUInteger index = arc4random_uniform(self.predictions.count);
+        self.predictionLabel.text = [self.predictions objectAtIndex:index];
+    }
+}
 @end
