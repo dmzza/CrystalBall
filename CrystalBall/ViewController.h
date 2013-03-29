@@ -10,9 +10,9 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)buttonPressed:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) NSArray *predictions;
 
+- (void) makePrediction;
 
 @end
